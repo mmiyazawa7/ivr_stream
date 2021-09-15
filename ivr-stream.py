@@ -63,6 +63,9 @@ def japanivr():
     logger.debug('From: %s', arg_from)
     logger.debug('To: %s', arg_to)
 
+    currentDT = datetime.datetime.now()
+    date =currentDT.strftime("%Y-%m-%d %H:%M:%S")
+    
     sms_text = "We received call from " + session['from'] + " on " + date
     response_SMS = client_sms.send_message({'from': 'NexmoJapan', 'to': admin_number, 'text': sms_text})
     logger.debug(response_SMS)
