@@ -63,7 +63,15 @@ def japanivr():
     logger.debug('From: %s', arg_from)
     logger.debug('To: %s', arg_to)
 
-
+    sms_text = "We received call from " + session['from'] + " on " + date
+    response_SMS = client_sms.send_message({'from': 'NexmoJapan', 'to': admin_number, 'text': sms_text})
+    logger.debug(response_SMS)
+    logger.debug(sms_text)
+    
+    sms_text2 = "お電話ありがとうございます。Vonage APIについて、https://www.vonagebusiness.jp/communications-apis/ AI Talkについて、https://www.ai-j.jp/"
+    response_SMS = client_sms.send_message({'from': 'NexmoJapan', 'to': session['from'], 'text': sms_text2})
+    logger.debug(response_SMS)
+    logger.debug(sms_text2)
     
     ncco=[{
 	        "action": "stream",
@@ -73,7 +81,7 @@ def japanivr():
           {
             "action": "input",
             "timeOut": "30",
-            "submitOnHash": "true",
+            "maxDigits": "1",
             "eventUrl": [ webhook_url + "/dtmfresponse"]
             }]
     js=json.dumps(ncco)
@@ -97,11 +105,6 @@ def dtmfresponse():
 
     logger.debug("The User enter: " + str(result) + "\n")
     logger.debug(date)
-
-#    sms_text = "We received call from " + session['from'] + " on " + date
-#    response_SMS = client_sms.send_message({'from': 'NexmoJapan', 'to': admin_number, 'text': sms_text})
-#    logger.debug(response_SMS)
-#    logger.debug(sms_text)
     
     if result == '1':
         ncco = [
