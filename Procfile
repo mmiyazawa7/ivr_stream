@@ -1,1 +1,1 @@
-web: gunicorn ivr_stream:app --log-file -
+web: gunicorn ivr-stream:app --log-file -
