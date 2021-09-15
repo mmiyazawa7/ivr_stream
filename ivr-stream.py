@@ -98,10 +98,10 @@ def dtmfresponse():
     logger.debug("The User enter: " + str(result) + "\n")
     logger.debug(date)
 
-    sms_text = "We received call from " + session['from'] + " on " + date
-    response_SMS = client_sms.send_message({'from': 'NexmoJapan', 'to': admin_number, 'text': sms_text})
-    logger.debug(response_SMS)
-    logger.debug(sms_text)
+#    sms_text = "We received call from " + session['from'] + " on " + date
+#    response_SMS = client_sms.send_message({'from': 'NexmoJapan', 'to': admin_number, 'text': sms_text})
+#    logger.debug(response_SMS)
+#    logger.debug(sms_text)
     
     if result == '1':
         ncco = [
