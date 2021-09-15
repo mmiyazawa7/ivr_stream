@@ -104,16 +104,15 @@ def dtmfresponse():
     logger.debug(sms_text)
     
     if result == '1':
-
         ncco = [
             {
                 "action": "stream",
                 "streamUrl": ["https://github.com/mmiyazawa7/streams/blob/master/1_message.mp3"],
             },
             {
-	        "action": "stream",
-	        "streamUrl": ["https://github.com/mmiyazawa7/streams/blob/master/0_message.mp3"],
-            "bargeIn": "true"
+                "action": "stream",
+                "streamUrl": ["https://github.com/mmiyazawa7/streams/blob/master/0_message.mp3"],
+                "bargeIn": "true"
 	      },
             {
                 "action": "input",
@@ -122,24 +121,22 @@ def dtmfresponse():
                 "eventUrl": [ webhook_url + "/dtmfresponse"]
             }
         ]
-   
         js = json.dumps(ncco)
         resp = Response(js, status=200, mimetype='application/json')
         logger.debug('Response NCCO Menu_1 Stream')
         print(resp)
         return resp
     elif result == '2':
-
         ncco = [
             {
                 "action": "stream",
                 "streamUrl": ["https://github.com/mmiyazawa7/streams/blob/master/2_message.mp3"],
             },
             {
-	        "action": "stream",
-	        "streamUrl": ["https://github.com/mmiyazawa7/streams/blob/master/0_message.mp3"],
-            "bargeIn": "true"
-	      },
+                "action": "stream",
+                "streamUrl": ["https://github.com/mmiyazawa7/streams/blob/master/0_message.mp3"],
+                "bargeIn": "true"
+            },
             {
                 "action": "input",
                 "timeOut": "30",
@@ -147,23 +144,22 @@ def dtmfresponse():
                 "eventUrl": [ webhook_url + "/dtmfresponse"]
             }
         ]
-
         js = json.dumps(ncco)
         resp = Response(js, status=200, mimetype='application/json')
         logger.debug('Response NCCO Menu_2 Stream')
         print(resp)
         return resp
     elif result == '3':
-            ncco = [    
+        ncco = [
             {
                 "action": "stream",
                 "streamUrl": ["https://github.com/mmiyazawa7/streams/blob/master/3_message.mp3"],
             },
             {
-	        "action": "stream",
-	        "streamUrl": ["https://github.com/mmiyazawa7/streams/blob/master/0_message.mp3"],
-            "bargeIn": "true"
-	      },
+                "action": "stream",
+                "streamUrl": ["https://github.com/mmiyazawa7/streams/blob/master/0_message.mp3"],
+                "bargeIn": "true"
+            },
             {
                 "action": "input",
                 "timeOut": "30",
@@ -171,19 +167,18 @@ def dtmfresponse():
                 "eventUrl": [ webhook_url + "/dtmfresponse"]
             }
         ]
-
         js = json.dumps(ncco)
         resp = Response(js, status=200, mimetype='application/json')
         logger.debug('Response NCCO Menu_2 Stream')
         print(resp)
         return resp
     elif result == '4':
-            ncco = [    
+        ncco = [
             {
-	        "action": "stream",
-	        "streamUrl": ["https://github.com/mmiyazawa7/streams/blob/master/0_message.mp3"],
-            "bargeIn": "true"
-	      },
+                "action": "stream",
+                "streamUrl": ["https://github.com/mmiyazawa7/streams/blob/master/0_message.mp3"],
+                "bargeIn": "true"
+            },
             {
                 "action": "input",
                 "timeOut": "30",
@@ -191,13 +186,11 @@ def dtmfresponse():
                 "eventUrl": [ webhook_url + "/dtmfresponse"]
             }
         ]
-
         js = json.dumps(ncco)
         resp = Response(js, status=200, mimetype='application/json')
         logger.debug('Response NCCO Menu_2 Stream')
         print(resp)
         return resp
-    
     else:
         ncco = [
             {
@@ -206,10 +199,10 @@ def dtmfresponse():
                 "voiceName": "Mizuki"
             },
             {
-	        "action": "stream",
-	        "streamUrl": ["https://github.com/mmiyazawa7/streams/blob/master/0_message.mp3"],
-            "bargeIn": "true"
-	      },
+                "action": "stream",
+                "streamUrl": ["https://github.com/mmiyazawa7/streams/blob/master/0_message.mp3"],
+                "bargeIn": "true"
+            },
             {
                 "action": "input",
                 "timeOut": "30",
