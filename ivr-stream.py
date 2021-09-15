@@ -107,11 +107,11 @@ def dtmfresponse():
         ncco = [
                 {
                     "action": "stream",
-                    "streamUrl": ["https://github.com/mmiyazawa7/streams/blob/master/1_message.mp3"],
+                    "streamUrl": ["https://github.com/mmiyazawa7/streams/blob/master/1_message.mp3?raw=true"],
                 },
                 {
                     "action": "stream",
-                    "streamUrl": ["https://github.com/mmiyazawa7/streams/blob/master/0_message.mp3"],
+                    "streamUrl": ["https://github.com/mmiyazawa7/streams/blob/master/0_message.mp3?raw=true"],
                     "bargeIn": "true"
 	           },
                 {
@@ -130,11 +130,11 @@ def dtmfresponse():
         ncco = [
                 {
                     "action": "stream",
-                    "streamUrl": ["https://github.com/mmiyazawa7/streams/blob/master/2_message.mp3"],
+                    "streamUrl": ["https://github.com/mmiyazawa7/streams/blob/master/2_message.mp3?raw=true"],
                 },
                 {
                     "action": "stream",
-                    "streamUrl": ["https://github.com/mmiyazawa7/streams/blob/master/0_message.mp3"],
+                    "streamUrl": ["https://github.com/mmiyazawa7/streams/blob/master/0_message.mp3?raw=true"],
                     "bargeIn": "true"
                 },
                 {
@@ -153,11 +153,11 @@ def dtmfresponse():
         ncco = [
                 {
                     "action": "stream",
-                    "streamUrl": ["https://github.com/mmiyazawa7/streams/blob/master/3_message.mp3"],
+                    "streamUrl": ["https://github.com/mmiyazawa7/streams/blob/master/3_message.mp3?raw=true"],
                 },
                 {
                     "action": "stream",
-                    "streamUrl": ["https://github.com/mmiyazawa7/streams/blob/master/0_message.mp3"],
+                    "streamUrl": ["https://github.com/mmiyazawa7/streams/blob/master/0_message.mp3?raw=true"],
                     "bargeIn": "true"
                 },
                 {
@@ -176,7 +176,7 @@ def dtmfresponse():
         ncco = [
                 {
                     "action": "stream",
-                    "streamUrl": ["https://github.com/mmiyazawa7/streams/blob/master/0_message.mp3"],
+                    "streamUrl": ["https://github.com/mmiyazawa7/streams/blob/master/0_message.mp3?raw=true"],
                     "bargeIn": "true"
                 },
                 {
@@ -200,7 +200,7 @@ def dtmfresponse():
                 },
                 {
                     "action": "stream",
-                    "streamUrl": ["https://github.com/mmiyazawa7/streams/blob/master/0_message.mp3"],
+                    "streamUrl": ["https://github.com/mmiyazawa7/streams/blob/master/0_message.mp3?raw=true"],
                     "bargeIn": "true"
                 },
                 {
