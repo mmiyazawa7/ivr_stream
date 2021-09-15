@@ -117,7 +117,7 @@ def dtmfresponse():
                 {
                     "action": "input",
                     "timeOut": "30",
-                    "submitOnHash": "true",
+                    "maxDigits": "1",
                     "eventUrl": [ webhook_url + "/dtmfresponse"]
                 }
             ]
@@ -140,7 +140,7 @@ def dtmfresponse():
                 {
                     "action": "input",
                     "timeOut": "30",
-                    "submitOnHash": "true",
+                    "maxDigits": "1",
                     "eventUrl": [ webhook_url + "/dtmfresponse"]
                 }
             ]
@@ -163,7 +163,7 @@ def dtmfresponse():
                 {
                     "action": "input",
                     "timeOut": "30",
-                    "submitOnHash": "true",
+                    "maxDigits": "1",
                     "eventUrl": [ webhook_url + "/dtmfresponse"]
                 }
             ]
@@ -182,7 +182,7 @@ def dtmfresponse():
                 {
                     "action": "input",
                     "timeOut": "30",
-                    "submitOnHash": "true",
+                    "maxDigits": "1",
                     "eventUrl": [ webhook_url + "/dtmfresponse"]
                 }
             ]
@@ -206,7 +206,7 @@ def dtmfresponse():
                 {
                     "action": "input",
                     "timeOut": "30",
-                    "submitOnHash": "true",
+                    "maxDigits": "1",
                     "eventUrl": [ webhook_url + "/dtmfresponse"]
                 }
             ]
