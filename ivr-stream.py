@@ -67,7 +67,7 @@ def japanivr():
     
     ncco=[{
 	        "action": "stream",
-	        "streamUrl": ["https://github.com/mmiyazawa7/streams/blob/master/0_message.mp3"],
+	        "streamUrl": ["https://github.com/mmiyazawa7/streams/blob/master/0_message.mp3?raw=true"],
             "bargeIn": "true"
 	      },
           {
