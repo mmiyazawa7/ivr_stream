@@ -105,22 +105,22 @@ def dtmfresponse():
     
     if result == '1':
         ncco = [
-            {
-                "action": "stream",
-                "streamUrl": ["https://github.com/mmiyazawa7/streams/blob/master/1_message.mp3"],
-            },
-            {
-                "action": "stream",
-                "streamUrl": ["https://github.com/mmiyazawa7/streams/blob/master/0_message.mp3"],
-                "bargeIn": "true"
-	      },
-            {
-                "action": "input",
-                "timeOut": "30",
-                "submitOnHash": "true",
-                "eventUrl": [ webhook_url + "/dtmfresponse"]
-            }
-        ]
+                {
+                    "action": "stream",
+                    "streamUrl": ["https://github.com/mmiyazawa7/streams/blob/master/1_message.mp3"],
+                },
+                {
+                    "action": "stream",
+                    "streamUrl": ["https://github.com/mmiyazawa7/streams/blob/master/0_message.mp3"],
+                    "bargeIn": "true"
+	           },
+                {
+                    "action": "input",
+                    "timeOut": "30",
+                    "submitOnHash": "true",
+                    "eventUrl": [ webhook_url + "/dtmfresponse"]
+                }
+            ]
         js = json.dumps(ncco)
         resp = Response(js, status=200, mimetype='application/json')
         logger.debug('Response NCCO Menu_1 Stream')
@@ -128,22 +128,22 @@ def dtmfresponse():
         return resp
     elif result == '2':
         ncco = [
-            {
-                "action": "stream",
-                "streamUrl": ["https://github.com/mmiyazawa7/streams/blob/master/2_message.mp3"],
-            },
-            {
-                "action": "stream",
-                "streamUrl": ["https://github.com/mmiyazawa7/streams/blob/master/0_message.mp3"],
-                "bargeIn": "true"
-            },
-            {
-                "action": "input",
-                "timeOut": "30",
-                "submitOnHash": "true",
-                "eventUrl": [ webhook_url + "/dtmfresponse"]
-            }
-        ]
+                {
+                    "action": "stream",
+                    "streamUrl": ["https://github.com/mmiyazawa7/streams/blob/master/2_message.mp3"],
+                },
+                {
+                    "action": "stream",
+                    "streamUrl": ["https://github.com/mmiyazawa7/streams/blob/master/0_message.mp3"],
+                    "bargeIn": "true"
+                },
+                {
+                    "action": "input",
+                    "timeOut": "30",
+                    "submitOnHash": "true",
+                    "eventUrl": [ webhook_url + "/dtmfresponse"]
+                }
+            ]
         js = json.dumps(ncco)
         resp = Response(js, status=200, mimetype='application/json')
         logger.debug('Response NCCO Menu_2 Stream')
@@ -151,22 +151,22 @@ def dtmfresponse():
         return resp
     elif result == '3':
         ncco = [
-            {
-                "action": "stream",
-                "streamUrl": ["https://github.com/mmiyazawa7/streams/blob/master/3_message.mp3"],
-            },
-            {
-                "action": "stream",
-                "streamUrl": ["https://github.com/mmiyazawa7/streams/blob/master/0_message.mp3"],
-                "bargeIn": "true"
-            },
-            {
-                "action": "input",
-                "timeOut": "30",
-                "submitOnHash": "true",
-                "eventUrl": [ webhook_url + "/dtmfresponse"]
-            }
-        ]
+                {
+                    "action": "stream",
+                    "streamUrl": ["https://github.com/mmiyazawa7/streams/blob/master/3_message.mp3"],
+                },
+                {
+                    "action": "stream",
+                    "streamUrl": ["https://github.com/mmiyazawa7/streams/blob/master/0_message.mp3"],
+                    "bargeIn": "true"
+                },
+                {
+                    "action": "input",
+                    "timeOut": "30",
+                    "submitOnHash": "true",
+                    "eventUrl": [ webhook_url + "/dtmfresponse"]
+                }
+            ]
         js = json.dumps(ncco)
         resp = Response(js, status=200, mimetype='application/json')
         logger.debug('Response NCCO Menu_2 Stream')
@@ -174,18 +174,18 @@ def dtmfresponse():
         return resp
     elif result == '4':
         ncco = [
-            {
-                "action": "stream",
-                "streamUrl": ["https://github.com/mmiyazawa7/streams/blob/master/0_message.mp3"],
-                "bargeIn": "true"
-            },
-            {
-                "action": "input",
-                "timeOut": "30",
-                "submitOnHash": "true",
-                "eventUrl": [ webhook_url + "/dtmfresponse"]
-            }
-        ]
+                {
+                    "action": "stream",
+                    "streamUrl": ["https://github.com/mmiyazawa7/streams/blob/master/0_message.mp3"],
+                    "bargeIn": "true"
+                },
+                {
+                    "action": "input",
+                    "timeOut": "30",
+                    "submitOnHash": "true",
+                    "eventUrl": [ webhook_url + "/dtmfresponse"]
+                }
+            ]
         js = json.dumps(ncco)
         resp = Response(js, status=200, mimetype='application/json')
         logger.debug('Response NCCO Menu_2 Stream')
@@ -193,23 +193,23 @@ def dtmfresponse():
         return resp
     else:
         ncco = [
-            {
-                "action": "talk",
-                "text": "　入力が間違えています。電話を切るか、メニュー番号を押してください",
-                "voiceName": "Mizuki"
-            },
-            {
-                "action": "stream",
-                "streamUrl": ["https://github.com/mmiyazawa7/streams/blob/master/0_message.mp3"],
-                "bargeIn": "true"
-            },
-            {
-                "action": "input",
-                "timeOut": "30",
-                "submitOnHash": "true",
-                "eventUrl": [ webhook_url + "/dtmfresponse"]
-            }
-        ]
+                {
+                    "action": "talk",
+                    "text": "　入力が間違えています。電話を切るか、メニュー番号を押してください",
+                    "voiceName": "Mizuki"
+                },
+                {
+                    "action": "stream",
+                    "streamUrl": ["https://github.com/mmiyazawa7/streams/blob/master/0_message.mp3"],
+                    "bargeIn": "true"
+                },
+                {
+                    "action": "input",
+                    "timeOut": "30",
+                    "submitOnHash": "true",
+                    "eventUrl": [ webhook_url + "/dtmfresponse"]
+                }
+            ]
         js = json.dumps(ncco)
         resp = Response(js, status=200, mimetype='application/json')
         logger.debug('Wrong Input.Try Again Message')
